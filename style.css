@@ -58,12 +58,11 @@
             color: white;
             text-decoration: none;
             font-size: 14px;
-            padding: 0 5px;
+            padding: 0 15px;
         }
 
         .main-menu a:not(:last-child) {
             border-right: 1px solid rgba(255, 255, 255, 0.2);
-            padding-right: 25px;
         }
 
         .menu-container {
@@ -651,176 +650,6 @@
                 font-size: 12px;
             }
         }
-
-        .side-menu {
-            position: absolute;
-            top: 239px;
-            left: 0;
-            width: 250px;
-            background-color: #fff;
-            border-right: 1px solid #ddd;
-            height: 1155px;
-            overflow-y: auto;
-        }
-
-        .menu-header {
-            padding: 15px;
-            background-color: #f5f5f5;
-            border-bottom: 1px solid #ddd;
-            height: 75px;
-            text-align:left;
-            padding-left: 20px;
-            padding-top: 25px;
-            display: flex;
-            @media (max-width: 1080px) { 
-                .menu-header {
-                    width: 100%; /* No celular, o menu ocupa toda a largura */
-                    text-align: center;
-                }
-            }
-            
-        }
-
-        .menu-items {
-            display: flex;
-            padding: 10px 0;
-            text-align: left;
-            flex-direction: column;
-            @media (max-width: 1080px) { 
-                .menu-items {
-                    width: 100%; /* No celular, o menu ocupa toda a largura */
-                    text-align: center;
-                }
-            }
-            
-        }
-
-        .menu-items a {
-            display: block;
-            padding: 10px 15px;
-            color: #333;
-            text-decoration: none;
-            transition: background-color 0.3s;
-            @media (max-width: 1080px) { 
-                .menu-items a {
-                    width: 100%; /* No celular, o menu ocupa toda a largura */
-                    text-align: center;
-                }
-            }
-            
-        }
-
-        .menu-items a:hover {
-            background-color: #f0f0f0;
-            @media (max-width: 1080px) { 
-                .menu-items a:hover {
-                    width: 100%; /* No celular, o menu ocupa toda a largura */
-                    text-align: center;
-                }
-            }
-            
-        }
-
-        .menu-items i {
-            width: 20px;
-            margin-right: 10px;
-            @media (max-width: 1080px) { 
-                .menu-items i {
-                    width: 100%; /* No celular, o menu ocupa toda a largura */
-                    text-align: center;
-                }
-            }
-        }
-
-        /* Ajuste o conteúdo principal para não sobrepor o menu */
-        .main-content {
-            margin-left: 250px;
-            @media (max-width: 1080px) { 
-                .main-content {
-                    width: 100%; /* No celular, o menu ocupa toda a largura */
-                    text-align: center;
-                }
-            }
-        }
-
-        /* Ocultar side-menu em dispositivos móveis */
-        @media screen and (max-width: 1080px) {
-            .side-menu {
-                display: none;
-            }
-
-            /* Remover a margem do conteúdo principal em dispositivos móveis */
-            .main-content {
-                margin-left: 0;
-            }
-        }
-
-        /* Ajuste específico para a página NFS-E */
-        .sitenfse .side-menu {
-            top: 372px;
-            height: 755px;
-        }
-
-        /* Ajuste específico para a página Plantão Fiscal */
-        .siteplantaofiscal .side-menu {
-            top: 320px;
-            height: 513px;
-        }
-        .sitelegislacao .side-menu {
-            top: 239px;
-            height: 645px !important;
-        }
-
-        /* Altura personalizada para cada página */
-        .side-menu-iss {
-            height: 755px;
-            top: 320px;
-        }
-
-        .side-menu-iptu {
-            height: 556px;
-            top: 375px;
-        }
-
-        .side-menu-itbi {
-            height: 555px;
-            top: 320px;
-        }
-
-        .side-menu-alvara {
-            height: 355px;
-            top: 500px;
-        }
-        /* ALTERAR DO NSFE PARA BAIXO */
-        .side-menu-nfse {
-            height: 150px;
-            top: 360px;
-        }
-
-        .side-menu-alvara {
-            height: 555px;
-            top: 320px;
-        }
-
-        .side-menu-certidoes {
-            height: 555px;
-            top: 352px;
-        }
-
-        .side-menu-legislacao {
-            height: 800px;
-            top: 40px;
-        }
-
-        .side-menu-plantao {
-            height: 600px;
-            top: 320px;
-        }
-
-        .side-menu-formularios {
-            height: 700px;
-            top: 320px;
-        }
         
 /* tirei o rodapé. */
 @media (max-width: 600px) {
@@ -915,3 +744,34 @@
     height: 800px !important;  /* Aumentando a altura do fundo branco e forçando com !important */
     background: #fdfdfd;
 }
+
+
+h4 {
+    font-size: 16px;
+    
+}
+h2 {
+    font-weight: 100;
+    -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.text-dos-botoes {
+  max-width: 600px;       /* mantém a largura máxima */
+  margin-left: 21%;       /* margem esquerda maior para deslocar à esquerda */
+  margin-right: auto;     /* margem direita automática para manter o alinhamento */
+  margin-top: 20px;
+  margin-bottom: 20px;    /* margens verticais */
+  padding: 0 15px;        /* padding lateral */
+}
+
+
+.text-dos-botoes p {
+  text-align: justify;
+  text-justify: inter-word;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+}
+
