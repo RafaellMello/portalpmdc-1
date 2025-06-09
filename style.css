@@ -5,31 +5,6 @@
             font-family: Arial, sans-serif;
         }
 
-        /* Barra superior */
-        .top-bar {
-            background-color: #2c3e50;
-            padding: 8px 0;
-        }
-
-        .top-bar-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-        }
-
-        .top-bar a {
-            color: white;
-            text-decoration: none;
-            font-size: 13px;
-        }
-
-        .top-bar a:hover {
-            text-decoration: underline;
-        }
-
         /* Menu principal */
         .main-menu {
             display: flex;
@@ -168,12 +143,23 @@
         }
 
         .footer-content {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
-            max-width: 1200px;
+            display: flex;
+            justify-content: space-between;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            flex-wrap: wrap;
+            max-width: 1600px;
             margin: 0 auto;
             padding: 0 40px;
+        }
+
+        .footer-section {
+            flex: 1 1 22%;
+            box-sizing: border-box;
+        }
+
+        .footer-section:nth-of-type(2) {
+            margin-top: 37px;
         }
 
         .footer-section h3 {
@@ -757,9 +743,9 @@ h2 {
 }
 
 .text-dos-botoes {
-  max-width: 600px;       /* mantém a largura máxima */
-  margin-left: 21%;       /* margem esquerda maior para deslocar à esquerda */
-  margin-right: auto;     /* margem direita automática para manter o alinhamento */
+  max-width: 100%;       /* mantém a largura máxima */
+  margin-left: 15%;       /* margem esquerda maior para deslocar à esquerda */
+  margin-right: 15%;     /* margem direita automática para manter o alinhamento */
   margin-top: 20px;
   margin-bottom: 20px;    /* margens verticais */
   padding: 0 15px;        /* padding lateral */
@@ -774,4 +760,42 @@ h2 {
   line-height: 1.5;
   margin: 0;
 }
+
+@media (max-width: 768px) {
+  .text-dos-botoes {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 0 15px;
+  }
+
+  .text-dos-botoes p {
+    text-align: center;
+  }
+
+  /* Listas alinhadas à esquerda mesmo no celular */
+  .text-dos-botoes ul,
+  .text-dos-botoes ol,
+  .text-dos-botoes li {
+    text-align: left !important;
+    padding-left: 20px; /* garante espaço para marcadores */
+  }
+}
+
+
+.centralizar {
+  text-align: center !important;
+  width: 100%;
+  margin-bottom: 50px !important;
+}
+
+@media (max-width: 768px) {
+  .centralizar {
+    text-align: justify !important;
+    max-width: 90%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}
+
 
